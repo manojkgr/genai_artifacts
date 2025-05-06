@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Favorite Sites</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f7f9fc;
+      background: #f0f4f8;
       margin: 0;
       padding: 2rem;
       display: flex;
@@ -16,7 +16,7 @@
     }
 
     h1 {
-      color: #333;
+      color: #222;
       margin-bottom: 2rem;
     }
 
@@ -25,32 +25,41 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
       width: 100%;
-      max-width: 900px;
+      max-width: 1000px;
     }
 
     .card {
       background: white;
-      border-radius: 12px;
+      border-radius: 16px;
       padding: 1.5rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
       text-align: center;
+      transition: transform 0.2s ease;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 1rem;
     }
 
     .card a {
+      display: block;
       text-decoration: none;
       color: #1a73e8;
+      font-size: 1.2rem;
       font-weight: bold;
-      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
     }
 
     .card p {
       color: #555;
-      margin-top: 0.5rem;
+      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -58,16 +67,19 @@
   <h1>My Favorite Sites</h1>
   <div class="card-container">
     <div class="card">
+      <img src="https://www.google.com/favicon.ico" alt="Google Logo" />
       <a href="https://www.google.com" target="_blank">Google</a>
       <p>Search the web quickly and easily.</p>
     </div>
     <div class="card">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub Logo" />
       <a href="https://www.github.com" target="_blank">GitHub</a>
       <p>Host and review code, manage projects.</p>
     </div>
     <div class="card">
+      <img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico" alt="Stack Overflow Logo" />
       <a href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a>
-      <p>Find solutions to programming questions.</p>
+      <p>Find answers to programming questions.</p>
     </div>
   </div>
 </body>
