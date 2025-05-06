@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Favorite Sites</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f9fc;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #1a73e8;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      color: #555;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Favorite Sites</h1>
+  <div class="card-container">
+    <div class="card">
+      <a href="https://www.google.com" target="_blank">Google</a>
+      <p>Search the web quickly and easily.</p>
+    </div>
+    <div class="card">
+      <a href="https://www.github.com" target="_blank">GitHub</a>
+      <p>Host and review code, manage projects.</p>
+    </div>
+    <div class="card">
+      <a href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a>
+      <p>Find solutions to programming questions.</p>
+    </div>
+  </div>
+</body>
+</html>
